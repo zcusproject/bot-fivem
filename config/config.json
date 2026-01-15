@@ -1,0 +1,24 @@
+{
+  "author": "Zcus",
+  "interval": 10000,
+
+  "servers": {
+    "idp": "237yxy",
+    "jing": "6gqrq4",
+    "nusav": "ele3bm",
+    "cr": "pmj7by",
+    "brdk": "875zj4"
+  },
+
+  "channels": {
+    "Tabib": {
+      "channelId": "1454559173986615428",
+      "messageId": "1455038248903774229"
+    }
+  },
+
+  "admins": [
+    "1240000674150744188",
+    "1423641543851380857"
+  ]
+}
