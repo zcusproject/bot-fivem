@@ -89,6 +89,39 @@ const commands = [
   new SlashCommandBuilder()
     .setName("profile")
     .setDescription("Lihat profile role & limit auto"),
+
+    new SlashCommandBuilder()
+    .setName("addserver")
+    .setDescription("Tambah server baru (Admin)")
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
+    .addStringOption((o) =>
+      o.setName("id").setDescription("ID server").setRequired(true)
+    )
+    .addStringOption((o) =>
+      o.setName("kodeserver").setDescription("Kode server").setRequired(true)
+    ),
+
+  new SlashCommandBuilder()
+    .setName("editserver")
+    .setDescription("Edit server (Admin)")
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
+    .addStringOption((o) =>
+      o.setName("id").setDescription("ID server").setRequired(true)
+    )
+    .addStringOption((o) =>
+      o
+        .setName("kodeserver")
+        .setDescription("Kode server baru")
+        .setRequired(true)
+    ),
+
+  new SlashCommandBuilder()
+    .setName("delserver")
+    .setDescription("Hapus server (Admin)")
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
+    .addStringOption((o) =>
+      o.setName("id").setDescription("ID server").setRequired(true)
+    ),
 ];
 
 // ================= DELETE + DEPLOY =================
